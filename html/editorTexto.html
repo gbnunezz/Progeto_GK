@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de Texto Avançado</title>
+  <link rel="stylesheet" href="/css/editorTexto.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Editor de Texto</h1>
+    <a href="/html/perfil.html">Meu perfil</a>
+    <a href="/html/home.html">home</a>
+    <a href="/html/publicar.html">publicar</a>
+  </header>
+
+  <div class="toolbar">
+    <select id="fontFamilySelect">
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Verdana">Verdana</option>
+    </select>
+
+    <select id="fontSizeSelect">
+      <option value="1">8pt</option>
+      <option value="2">10pt</option>
+      <option value="3" selected>12pt</option>
+      <option value="4">14pt</option>
+      <option value="5">18pt</option>
+      <option value="6">24pt</option>
+      <option value="7">36pt</option>
+    </select>
+
+    <button data-cmd="bold">B</button>
+    <button data-cmd="italic">I</button>
+    <button data-cmd="underline">U</button>
+    <button data-cmd="strikeThrough">S</button>
+    <button data-cmd="justifyLeft">⯇</button>
+    <button data-cmd="justifyCenter">≡</button>
+    <button data-cmd="justifyRight">⯈</button>
+    <button data-cmd="justifyFull">☰</button>
+    <button data-cmd="insertOrderedList">1.</button>
+    <button data-cmd="insertUnorderedList">•</button>
+    <button id="insertLink">🔗</button>
+    <button id="insertImage">🖼️</button>
+    <button id="clearEditor">🗑️</button>
+    <button id="downloadContent">⬇️</button>
+  </div>
+
+  <div id="editor" contenteditable="true" class="editor"></div>
+
+  <div class="status">
+    <span id="wordCount">Palavras: 0</span>
+    <span id="charCount">Caracteres: 0</span>
+  </div>
+
+  <script src="/js/editorTexto.js"></script>
+</body>
+</html>
+

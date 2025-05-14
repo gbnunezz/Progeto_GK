@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leitor Plus - Publicar</title>
+  <link rel="stylesheet" href="/css/publicar.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Leitor Plus</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="editorTexto.html">Editor de Texto</a>
+        <a href="home.html">Home</a>
+        <a href="/html/perfil.html">Perfil</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <form action="#" method="POST" enctype="multipart/form-data" class="form-publicar">
+      <h2>Publicar Livro</h2>
+
+      <label for="capaLivro">Capa do Livro:</label>
+      <input type="file" id="capaLivro" name="capaLivro" accept="image/*">
+
+      <label for="livro">Arquivo do Livro:</label>
+      <input type="file" id="livro" name="livro" accept=".pdf,.epub,.txt">
+
+      <label for="genero">Gênero:</label>
+      <select id="genero" name="genero" required>
+        <option value="">Selecione um gênero</option>
+        <option value="terror">Terror</option>
+        <option value="suspense">Suspense</option>
+        <option value="acao">Ação</option>
+        <option value="aventura">Aventura</option>
+        <option value="ficcao">Ficção</option>
+        <option value="romance">Romance</option>
+      </select>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="comAnuncio">
+          Com anúncio
+        </label>
+
+        <label>
+          <input type="checkbox" name="permitirDownload">
+          Permitir download
+        </label>
+      </div>
+
+      <button type="submit">Publicar</button>
+    </form>
+  </main>
+</body>
+
+</html>
